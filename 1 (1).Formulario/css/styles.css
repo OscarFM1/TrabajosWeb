@@ -1,0 +1,235 @@
+/* Paleta de colores
+#04ADBF,#04BFBF, #F25E3D,#A6695B,#261111
+ */
+
+ *{
+    margin:0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    list-style: none; /* Quita las viñetas */
+
+ }
+ body{
+    height: 100vh; 
+ }
+ .container_header{
+    width: 100%;
+    height: 41%; /* Si es porcentaje hay que colocar vh para que funcione  el resto de eqtiquetas */
+    background: #04ADBF;
+    background-image: linear-gradient(10deg,#28adbca1,#23c3c396,#f2512d99),url(../img/faith-g53171e84d_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:center ;
+    padding: 0.1px;
+ }
+ .menu{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+ }
+
+ .menu a{
+    color:#261111;
+    text-decoration: none;
+ }
+ hr{
+    border-color: #A6695B;
+ }
+ .menu >li{
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    background: #f3a998;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 22px;
+ }
+
+ .menu>li:hover{
+    background-color: #f3a998;
+    border: 2px solid #04BFBF;
+ }
+ .menu.btn_contacto{
+    background-color: #f3a998;
+    border: 3px solid #04BFBF;
+ }
+ .title{
+    text-align: center;
+    font-size: 4em;
+    margin: 1%;
+    color: azure;
+
+ }
+ .fm_contact > hr{
+     margin-bottom: 3%;
+
+ }
+ .title_form{
+   margin: 2% 0;
+   text-align: center;
+   color:#04BFBF;
+ }
+ .fm_contact > input,label,button{
+   display: inline-block;
+   width: 80%;
+   margin: 1% 0;
+   font-size: 22px;
+
+ }
+ .fm_contact > input, .msn{
+   padding: 10px 2px;
+   border: none;
+   border-bottom: 2px solid #A6695B;
+   outline: none;
+   background-color: #f3a998;
+ }
+ .msn{
+   width: 80%;
+ }
+ /* Estilo a los Labels */
+
+ .fm_contact > label{
+   text-align: left;
+   padding: 5%;
+ }
+
+ input:focus, .msn:focus{
+   border-bottom: none;
+   border-right: 2px solid #402319;
+   background-color: #f2512d5d;
+}
+
+.btn_enviar, .btnRegistrar, .btnCancelar{
+   width: 30%;
+   margin-top: 3%;
+   padding: 10px 20px;
+   background-color: #A6695B;
+   border-radius: 10px;
+   font-size: 20px;
+   border: solid #f3a998;
+
+
+}
+
+
+.btn_enviar:hover{
+   background-color: #f3a998;
+   text-decoration: underline;
+}
+.footer{
+   width: 100vw;
+   height: auto;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: baseline;
+   background-image: linear-gradient(10deg,#04BFBF, #A6695B, #261111 60% );
+
+}
+
+.foot{
+   display: inline;
+   margin:3%;
+   text-align: center;
+}
+.copy{
+   width: 30%;
+   height: auto;
+   color: #f0f8ff;
+   line-height: 40px;
+}
+.my_nets, .map{
+   width: 30%;
+   height: auto;
+}
+.title_about,.title_nets,.title_ubi{
+   color: #f0f8ff;
+   margin-bottom: 3%;
+   padding: 1%;
+}
+.social_net >li{
+   padding: 1%;
+}
+.nets{
+   width: 8%;
+}
+
+.foot > iframe{
+   width: 100%;
+   height: auto;
+   border: 0;
+}
+
+.credits{
+   width: 100%;
+   padding: 2%;
+   background-color: #A6695B;
+   text-align: right;
+   color: aliceblue;
+}
+.credits > a{
+   color: #f0f8ff;
+   text-decoration: none;
+}
+
+.card{
+   width: 60%;
+   margin: 5% auto;
+   border: 2px solid #402319;
+   background-color:#F2F2F2;
+   text-align: center;
+}
+.title-card{
+   font-size:24px;
+   padding:2%;
+
+}
+.data-card, .text-mail, .text-msn{
+   font-size: 20px;
+   color: #402319;
+   padding: 1% 0;
+}
+.text-telefono{
+   font-size: 22px;
+   padding: 2% 0;
+}.btnRegistrar:hover, .btnCancelar:hover{
+   background: #BF0F30;  
+   text-decoration:underline;
+}
+.alerta{
+   width: 30%; 
+   height: auto; 
+    background: #BF0F30;
+     position: fixed;
+      top: calc(100vh - 65%); 
+      left: calc(100vw - 65%); 
+      text-align: center;
+       border: 2px solid #402319;
+        padding: 5px;
+}
+.textAlerta{
+   width: 100%; 
+   margin-top: 12%; 
+   margin-bottom: 10%; 
+   color: aliceblue;
+    font-size: 20px;
+}
+ .btnAlerta{
+
+}
+/* Estilo de validacion */
+
+.is-valid{
+   border-bottom: 2px solid green !important;
+
+}
+.is-invalid{
+   border-bottom: 2px solid red !important;
+
+}
+
+
+   
